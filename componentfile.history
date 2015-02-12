@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<History> 
+  <File usedCount="2" path="cmsis_boot/stm32f4xx.h"/>  
+  <File usedCount="2" path="cmsis_boot/stm32f4xx_conf.h"/>  
+  <File usedCount="2" path="cmsis_boot/system_stm32f4xx.c"/>
+</History>

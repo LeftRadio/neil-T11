@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<EmBlocks_project_file>
+	<EmBlocksVersion release="2.30" revision="1" />
+	<FileVersion major="1" minor="0" />
+	<Project>
+		<Option title="Neil T11" />
+		<Option pch_mode="2" />
+		<Option compiler="armgcc_eb" />
+		<Build>
+			<Target title="Neil T11">
+				<Option output=".\Neil T11.elf" />
+				<Option type="0" />
+				<Option create_hex="1" />
+				<Option compiler="armgcc_eb" />
+				<Device>
+					<Add option="$device=cortex-m4" />
+					<Add option="$fpu=fpv4-sp-d16" />
+					<Add option="$lscript=.\Neil T11.ld" />
+				</Device>
+				<Compiler>
+					<Add option="-mfloat-abi=hard" />
+					<Add option="-Wall" />
+					<Add option="-ffunction-sections" />
+					<Add option="-O1" />
+					<Add option="-g" />
+					<Add option="-DSTM32F407VE" />
+					<Add option="-DSTM32F4XX" />
+					<Add option="-DUSE_STDPERIPH_DRIVER" />
+					<Add option="-DUSE_ULPI_PHY" />
+					<Add option="-DUSE_USB_OTG_HS" />
+					<Add option="-DARM_MATH_CM4" />
+					<Add option="-D__FPU_PRESENT" />
+					<Add directory="." />
+				</Compiler>
+				<Linker>
+					<Add option="-Wl,--gc-sections" />
+					<Add option="--entry=main" />
+					<Add library="ngl" />
+					<Add library=".\libarm_cortexM4lf_math.a" />
+					<Add directory="drivers\lcd_ngl\" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add directory="cmsis_lib\include" />
+			<Add directory="Drivers\UI_NGL" />
+			<Add directory="Drivers\STM32_USB_OTG_Driver\inc" />
+			<Add directory="Drivers\FFT" />
+			<Add directory="cmsis_boot" />
+			<Add directory="cmsis" />
+			<Add directory="Drivers\STM32_USB_Device_Library\Core\inc" />
+			<Add directory="Drivers\UI_NGL\Pages\SettingsPage" />
+			<Add directory="Drivers\TouchScreen" />
+			<Add directory="Drivers\LCD_NGL" />
+			<Add directory="Drivers\SPI" />
+			<Add directory="Drivers\STM32_USB_Device_Library\Class\audio\inc" />
+			<Add directory="Drivers\Si5351" />
+			<Add directory="Drivers\SysTick" />
+			<Add directory="Drivers\UI_NGL\Fonts" />
+			<Add directory="DAC_Layer" />
+			<Add directory="Drivers\UI_NGL\Pages\OFFTimerPage" />
+			<Add directory="Drivers\UI_NGL\Pages\MainPage" />
+			<Add directory="Drivers\UI_NGL\Pages" />
+			<Add directory="Drivers\I2S" />
+			<Add directory="Drivers\I2C" />
+			<Add directory="Drivers\UI_NGL\Bitmaps" />
+		</Compiler>
+		<Unit filename="DAC_Layer\AD1852\AD1852.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DAC_Layer\Audio_Interface.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="DAC_Layer\Audio_Interface.h" />
+		<Unit filename="Drivers\FFT\FFT.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\FFT\FFT.h" />
+		<Unit filename="Drivers\I2C\I2C.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\I2C\I2C.h" />
+		<Unit filename="Drivers\I2S\I2S.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\I2S\I2S.h" />
+		<Unit filename="Drivers\LCD_NGL\LCD.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\LCD_NGL\LCD.h" />
+		<Unit filename="Drivers\LCD_NGL\NGL.h" />
+		<Unit filename="Drivers\LCD_NGL\colors 5-6-5.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\LCD_NGL\colors 5-6-5.h" />
+		<Unit filename="Drivers\LCD_NGL\libNGL.a" />
+		<Unit filename="Drivers\SPI\SPI.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\SPI\SPI.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Class\audio\inc\usbd_audio_core.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Class\audio\src\usbd_audio_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\inc\usbd_conf.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\inc\usbd_core.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\inc\usbd_def.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\inc\usbd_desc.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\inc\usbd_ioreq.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\inc\usbd_req.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\inc\usbd_usr.h" />
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\src\usbd_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\src\usbd_desc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\src\usbd_ioreq.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\src\usbd_req.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_Device_Library\Core\src\usbd_usr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\inc\usb_bsp.h" />
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\inc\usb_conf.h" />
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\inc\usb_core.h" />
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\inc\usb_dcd.h" />
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\inc\usb_dcd_int.h" />
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\inc\usb_defines.h" />
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\inc\usb_regs.h" />
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\src\usb_bsp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\src\usb_core.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\src\usb_dcd.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\STM32_USB_OTG_Driver\src\usb_dcd_int.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\Si5351\Si5351.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\Si5351\Si5351.h" />
+		<Unit filename="Drivers\Si5351\Si5351_registers.h" />
+		<Unit filename="Drivers\SysTick\stm32f10x_systick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\SysTick\stm32f10x_systick.h" />
+		<Unit filename="Drivers\SysTick\systick.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\SysTick\systick.h" />
+		<Unit filename="Drivers\TouchScreen\touchscreen.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\TouchScreen\touchscreen.h" />
+		<Unit filename="Drivers\UI_NGL\Bitmaps\BackImg.jpg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\Clock.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\Control Panel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\Globe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\Images.h" />
+		<Unit filename="Drivers\UI_NGL\Bitmaps\List.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\forward.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\forward_on.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\minus.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\pause.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\pause_on.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\play.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\play_on.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\rewind.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\rewind_on.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\settings_.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\sound.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\sound_on.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\stop.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Bitmaps\stop_on.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Fonts\BankGothic_Lt_BT_11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Fonts\Fonts.h" />
+		<Unit filename="Drivers\UI_NGL\Fonts\Square721_BT_10.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Fonts\Square721_BT_11.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Fonts\Square721_BT_14.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Fonts\Square721_BT_8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Fonts\Square721_BT_9.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Pages\MainPage\MainPage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Pages\MainPage\MainPage_Buttons.h" />
+		<Unit filename="Drivers\UI_NGL\Pages\MainPage\MainPage_Labels.h" />
+		<Unit filename="Drivers\UI_NGL\Pages\MainPage\PeekLevel.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Pages\MainPage\PeekLevel.h" />
+		<Unit filename="Drivers\UI_NGL\Pages\OFFTimerPage\OFFTimerPage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Pages\OFFTimerPage\OFFTimerPage_Buttons.h" />
+		<Unit filename="Drivers\UI_NGL\Pages\OFFTimerPage\OFFTimerPage_Labels.h" />
+		<Unit filename="Drivers\UI_NGL\Pages\SettingsPage\SettingsPage.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Pages\SettingsPage\SettingsPage_Buttons.h" />
+		<Unit filename="Drivers\UI_NGL\Pages\SettingsPage\SettingsPage_Labels.h" />
+		<Unit filename="Drivers\UI_NGL\Pages\pages.h" />
+		<Unit filename="Drivers\UI_NGL\Spectrum.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Drivers\UI_NGL\Spectrum.h" />
+		<Unit filename="Global_Init.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Global_Init.h" />
+		<Unit filename="cmsis\arm_math.h" />
+		<Unit filename="cmsis\core_cm4.h" />
+		<Unit filename="cmsis\core_cm4_simd.h" />
+		<Unit filename="cmsis\core_cmFunc.h" />
+		<Unit filename="cmsis\core_cmInstr.h" />
+		<Unit filename="cmsis\math_helper.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis\math_helper.h" />
+		<Unit filename="cmsis_boot\startup\startup_stm32f4xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_boot\stm32f4xx.h" />
+		<Unit filename="cmsis_boot\stm32f4xx_conf.h" />
+		<Unit filename="cmsis_boot\system_stm32f4xx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_boot\system_stm32f4xx.h" />
+		<Unit filename="cmsis_lib\include\misc.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_adc.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_crc.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_dbgmcu.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_dma.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_exti.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_flash.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_fsmc.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_gpio.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_i2c.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_pwr.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_rcc.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_rtc.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_spi.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_syscfg.h" />
+		<Unit filename="cmsis_lib\include\stm32f4xx_tim.h" />
+		<Unit filename="cmsis_lib\source\misc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_adc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_crc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_dbgmcu.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_dma.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_exti.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_flash.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_fsmc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_gpio.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_i2c.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_pwr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_rcc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_rtc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_spi.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_syscfg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="cmsis_lib\source\stm32f4xx_tim.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="platform.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="platform.h" />
+		<Unit filename="stdio\printf.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="stm32f4xx_it.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="syscalls\syscalls.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger>
+				<target_debugging_settings target="Neil T11" active_interface="ST-link">
+					<debug_interface interface_id="ST-link" ip_address="localhost" ip_port="4242" path="${EMBLOCKS}\share\contrib" executable="STLinkGDB.exe" description="STM32F40x.svd" dont_start_server="false" backoff_time="1000" options="2" reg_filter="0" active_family="STMicroelectronics">
+						<family_options family_id="STMicroelectronics">
+							<option opt_id="ID_JTAG_SWD" opt_value="swd" />
+							<option opt_id="ID_VECTOR_START" opt_value="0x08000000" />
+							<option opt_id="ID_RESET_TYPE" opt_value="System" />
+							<option opt_id="ID_LOAD_PROGRAM" opt_value="1" />
+							<option opt_id="ID_SEMIHOST_CHECK" opt_value="0" />
+							<option opt_id="ID_RAM_EXEC" opt_value="0" />
+							<option opt_id="ID_VEC_TABLE" opt_value="1" />
+							<option opt_id="ID_DONT_CONN_RESET" opt_value="0" />
+							<option opt_id="ID_ALL_MODE_DEBUG" opt_value="0" />
+							<option opt_id="ID_DEV_ADDR" opt_value="" />
+							<option opt_id="ID_VERBOSE_LEVEL" opt_value="3" />
+						</family_options>
+					</debug_interface>
+				</target_debugging_settings>
+			</debugger>
+			<envvars />
+		</Extensions>
+	</Project>
+</EmBlocks_project_file>
