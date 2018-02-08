@@ -1,0 +1,662 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"vol",
+				"volume"
+			],
+			[
+				"au",
+				"audio_if\t(main.c)"
+			],
+			[
+				"peek",
+				"peeklevel.c\t(peeklevel.c)"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"u",
+				"uint8_t"
+			],
+			[
+				"ui",
+				"uint16_t"
+			],
+			[
+				"def",
+				"define"
+			],
+			[
+				"Glo",
+				"Global_Init.h"
+			],
+			[
+				"incl",
+				"include\t(Makefile)"
+			],
+			[
+				"if",
+				"ifmain\tif __name__ == '__main__'"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Python/Python.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "pack",
+		"selected_items":
+		[
+			[
+				"pack",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pac",
+				"Install Package Control"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Projects/ARM/neil-T11-master",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/AD1852",
+		"/C/Projects/ARM/neil-T11-master/Drivers/STM32_USB_Device_Library/Class",
+		"/C/Projects/ARM/neil-T11-master/Drivers/STM32_USB_Device_Library/Class/audio",
+		"/C/Projects/ARM/neil-T11-master/Drivers/STM32_USB_Device_Library/Class/audio/src",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF"
+	],
+	"file_history":
+	[
+		"/C/Downloads/Android/Original_backup/MT6737M_Android_scatter.txt",
+		"/C/Downloads/Android/Infs/usbvcom_brom.inf",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/AD1852/AD1852.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/I2S/I2S.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/t11_audio_if.c",
+		"/C/Downloads/Android/Windows 10 MTK VCOM USB Preloader Drivers/Windows 10 x86 MTK USB Drivers.inf",
+		"/C/Downloads/Android/Infs/usbvcom.inf",
+		"/C/Downloads/Android/Original_backup/RAM_TEST.txt",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/t11_user_if.c",
+		"/C/Downloads/Android/MT6737M_Android_scatter.txt",
+		"/C/Projects/ARM/neil-T11-master/stm_lib/include/stm32f4xx_dma.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/SPI/SPI.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/t11_audio_if_types.h",
+		"/C/Projects/ARM/neil-T11-master/stm_lib/include/stm32f4xx_spi.h",
+		"/C/Projects/ARM/neil-T11-master/stm_lib/source/stm32f4xx_spi.c",
+		"/C/Projects/ARM/neil-T11-master/cmsis/core_cm4.h",
+		"/C/Projects/ARM/neilscope3/drivers/rtc/RTC.c",
+		"/C/Projects/ARM/neilscope3/drivers/analog/Analog.c",
+		"/C/Projects/ARM/neilscope3/drivers/epm570/EPM570.c",
+		"/C/Projects/ARM/neilscope3/drivers/i2c/i2c.c",
+		"/C/Projects/ARM/ntmp/Drivers/SPI/SPI.c",
+		"/C/Projects/ARM/neil-T11-master/stm_lib/source/misc.c",
+		"/C/Projects/ARM/neil-T11-master/stm_lib/source/stm32f4xx_gpio.c",
+		"/C/Projects/ARM/Neil T11/Drivers/T11_Platform/AD1852/AD1852.c",
+		"/C/Projects/ARM/neil-T11-master/main.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/T11_Platform/platform.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/STM32_USB_Device_Library/Class/audio/src/usbd_audio_core.c",
+		"/C/Projects/ARM/Neil T11/Drivers/SPI/SPI.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/t11_hal.c",
+		"/C/Projects/ARM/Neil T11/Drivers/T11_Platform/platform.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/PGA2311/pga2311.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/pages/MainPage/mainpage.c",
+		"/C/Projects/ARM/neil-T11-master/cmsis_boot/stm32f4xx.h",
+		"/C/Projects/ARM/neil-T11-master/stm_lib/include/stm32f4xx_gpio.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/PGA2311/pga2311.h",
+		"/C/Projects/ARM/ntmp/Drivers/UI_NGL/pages/MainPage/mainpage.c",
+		"/C/Projects/ARM/Neil T11/Drivers/SPI/SPI.h",
+		"/C/Projects/ARM/Neil T11/Global_Init.c",
+		"/C/Projects/ARM/Neil T11/main.c",
+		"/C/Projects/ARM/Neil T11/Drivers/UI_NGL/Pages/MainPage/MainPage.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/NGL/NGL_types.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/pages/MainPage/mainpage_buttons.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/t11_hal_types.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/RELAY/relay.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/RELAY/relay.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/LEDS/LEDS.c",
+		"/C/Projects/ARM/neil-T11-master/Makefile",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/peeklevel.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/peeklevel.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/t11_user_if_types.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/t11_user_if.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/NGL/NGL.h",
+		"/C/Projects/example.c",
+		"/C/Projects/wavfile.h",
+		"/C/Projects/ARM/Neil T11/Drivers/UI_NGL/PeekLevel.c",
+		"/C/Projects/sound.wav",
+		"/C/Projects/wavfile.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/T11_Platform/platform_types.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/Si5351/Si5351.c",
+		"/C/Program Files/GNU Tools ARM Embedded/5.4 2016q3/arm-none-eabi/include/stdint.h",
+		"/C/Program Files/GNU Tools ARM Embedded/5.4 2016q3/arm-none-eabi/include/stdlib.h",
+		"/C/Program Files/GNU Tools ARM Embedded/5.4 2016q3/arm-none-eabi/include/sys/types.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/PeekLevel.c",
+		"/C/Projects/ARM/Neil T11/Drivers/UI_NGL/PeekLevel.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/pages/pages.h",
+		"/C/Projects/ARM/neil-T11-master/In file included from Drivers/USER_IF/pages/MainPage/mainpage.c",
+		"/C/Projects/ARM/neil-T11-master/makefile_filelist.py",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/bitmaps.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/Clock.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/Globe.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/List.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/Work.c",
+		"/C/Projects/GUI_Projects/neilT11_qt/code/pages/MainPage/mainpage_graphscales.h",
+		"/C/Projects/GUI_Projects/neilT11_qt/code/bitmaps/bitmaps.h",
+		"/C/Projects/Python/ngl_utils/setup.py",
+		"/C/Projects/Python/ngl_utils/ngl_utils/ngluic.py",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/TouchScreen/touchscreen.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/TouchScreen/touchscreen.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/T11_Platform/platform.h",
+		"/C/Projects/ARM/neil-T11-master/stm32f4xx_it.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/NGL/TouchScreen/touchscreen.c",
+		"/C/Projects/ARM/Neil T11/Drivers/LCD_NGL/NGL_types.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/NGL/ngl_usr.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/NGL/ngl_usr.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/NGL/NGL_types.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/NGL/NGL.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/CS43L22/CS43L22_audio_codec.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/Control_Panel.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/Controls.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/Settings.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/bitmaps/visual.c",
+		"/C/Projects/ARM/Neil T11/Drivers/UI_NGL/Bitmaps/Images.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/Pages/MainPage/MainPage.c",
+		"/C/Projects/ARM/ntmp/Drivers/LCD_NGL/NGL.h",
+		"/C/Projects/ARM/ntmp/Drivers/LCD_NGL/NGL_types.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/NGL/TouchScreen/touchscreen.h",
+		"/C/Projects/ARM/ntmp/main.c",
+		"/C/Projects/ARM/ntmp/stm32f4xx_it.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/BKP_SRAM4K/BKP_SRAM4K.c",
+		"/C/Projects/ARM/ngl/HAL_MAL/LCD_HAL.c",
+		"/C/Projects/ARM/ntmp/Drivers/LCD_NGL/LCD.c",
+		"/C/Projects/ARM/ngl/HAL_MAL/MAL.c",
+		"/C/Projects/ARM/ngl/NGL.h",
+		"/C/Projects/ARM/ngl/Makefile",
+		"/C/Projects/ARM/ngl/build.py",
+		"/C/Projects/ARM/ngl/README.md",
+		"/C/Downloads/ngl-master/TouchScreen/NGL_Touch_Events.c",
+		"/C/Downloads/ngl-master/TouchScreen/NGL_Touch_Events.h",
+		"/C/Projects/ARM/NGL/NGL.h",
+		"/C/Downloads/ngl-master/NGL_types.h",
+		"/C/Projects/ARM/neil-T11-master/stm_lib/source/stm32f4xx_dma.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/AD1852/AD1852.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/Si5351/Si5351.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/Spectrum.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/USER_IF/Pages/MainPage/PeekLevel.c",
+		"/C/Users/LeftRadio/AppData/Roaming/Sublime Text 3/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/LeftRadio/AppData/Roaming/Sublime Text 3/Packages/SublimeGDB/Default.sublime-keymap",
+		"/C/Projects/ARM/neil-T11-master/Drivers/AUDIO_IF/t11_audio_if.h",
+		"/C/Projects/ARM/Neil T11/Global_Init.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/LEDS/LEDS.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/I2C/I2C.c",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/BKP_SRAM4K/BKP_SRAM4K.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/I2C/I2C.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/SPI/SPI.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/I2S/I2S.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/HAL/t11_hal.h",
+		"/C/Projects/ARM/neil-T11-master/Drivers/STM32_USB_Device_Library/Class/audio/inc/usbd_audio_core.h",
+		"/C/Projects/ARM/neil-T11-master/neil-t11.sublime-project"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"\t",
+			"GPIO_Pin_4",
+			"AUDIO_IF_RESET_GPIO",
+			"AUDIO_IF_RESET_PIN",
+			"\t",
+			"read_cnt",
+			"gpio_initstruct",
+			"GLOBAL_MUTE_PIN",
+			"GLOBAL_MUTE_PORT",
+			"T11_HLEDS",
+			"T11_RELAY_",
+			"LEDS",
+			"T11_UIF_BackLight",
+			"T11_UIF_DeInit",
+			"T11_UIF_Init",
+			"T11_UIF_Render",
+			"T11_PeekLevel",
+			"t11_peeklevel",
+			"uint32_t",
+			"\t",
+			"NGL_Bitmap",
+			"T11_Touch",
+			"lcd_hal_struct",
+			"_touchPoint",
+			"_touchType",
+			"__AD_RegRead",
+			"__AD_RegWrite",
+			"NGL_Bitmap",
+			"T11_LCD_CtrlLinesConfig",
+			"LCD_FSMCConfig",
+			"Delay",
+			"FSMC_NORSRAMInitStructure",
+			"LCD_CtrlLinesConfig",
+			"\t",
+			"foops",
+			"_touchPoint",
+			"\t",
+			"pSI5351_Map",
+			"NGL_UpdateLabel",
+			"T11_I2S_",
+			"AD1852REG_INIT",
+			"GPIO_PuPd_NOPULL",
+			"GPIO_Mode_OUT",
+			"AUDIO_RESET_PIN",
+			"AD1852_",
+			"AD1852_Init",
+			"AD1852_ReadRegister",
+			"AD1852_WriteRegister",
+			"AD185x_NSS_SET_HIGHT",
+			"DMA1_Stream7",
+			"AUDIO_CMD_PAUSE",
+			"AUDIO_CMD_STOP",
+			"REEJHNNR B]'",
+			"AUDIO_OK",
+			"AUDIO_FAIL",
+			"AUDIO_CMD_PAUSE",
+			"AUDIO_STATE_ACTIVE",
+			"AD1853_DataLatch",
+			"T11_Reset",
+			"AudioBuffer_HalfFull",
+			"__SamplingUpdate",
+			"T11_Audio_IF",
+			"__SamplingUpdate",
+			"Bit_RESET",
+			"SPI",
+			"I2S_DISABLE_MASK",
+			"I2S_ENABLE_MASK",
+			"\t",
+			"SI5351_I2C_ADDR",
+			"\t",
+			"I2C1",
+			"I2C_Write",
+			"\t",
+			"SI5351_RUN",
+			"SI5351_STOP",
+			"platform",
+			"AD1852_REG_VALUE",
+			"platform->audio_if",
+			"sett.",
+			"T11_Audio_IF->settings",
+			"AltSettings",
+			"data_size_bits",
+			"T11_Audio_IF.stream.",
+			"AudioStream",
+			"buffer_align_size",
+			"flag",
+			"IsocOutCpyPtr",
+			"usbd_audio_Interface",
+			"Audio_AltSettings_Typedef",
+			"Audio_Stream_Typedef",
+			"I2S_TypeDef",
+			"\t",
+			"AI_I2S",
+			"platform",
+			"T11_platform",
+			"AudioInterface",
+			"DAC_AD1852",
+			"AudioInterface.DAC_HAL",
+			"AUDIO_STATE_ACTIVE",
+			"AudioState",
+			"T11_AUDIO_IF_Clock_TypeDef",
+			"DAC_HAL_TypeDef",
+			"AUDIO_IF_TypeDef",
+			"\t",
+			"SPI1",
+			"gpio_init",
+			"nvic_init",
+			"NVIC_InitStructure",
+			"GPIO_InitStruct",
+			"SPIx_CLK_INIT",
+			"SPI_I2S_SendData",
+			"SPI_CloseRxTx_ISR",
+			"SPI_DMATransmitCplt",
+			"VolumeLevel_db_L",
+			"VolumeLevel_db_R",
+			"_CORE_ID",
+			"flag",
+			"IsocOutCpyPtr",
+			"__force_inline",
+			"dpid",
+			"static __inline",
+			"buffer_align_size",
+			"AudioStream.align_size",
+			"AltSettings.frame_size",
+			"frame_size",
+			"TransferCropSize",
+			"AudioStream.cpy_ptr",
+			"IsocOutCpyPtr"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"    ",
+			"  ",
+			"gpio_init",
+			"AUDIO_IF_GLOBAL_MUTE_PIN",
+			"AUDIO_IF_GLOBAL_MUTE_PORT",
+			"T11_HRELAY",
+			"",
+			"RELAY",
+			"BackLight",
+			"DeInit",
+			"Init",
+			"Update",
+			"T11_UIF_PeekLevel",
+			"T11_PeekLevel",
+			"    ",
+			"NGL_Image",
+			"T11_UIF_Touch",
+			"lcd_struct",
+			"NGL_Image",
+			"__T11_LCD_CtrlLinesConfig",
+			"__T11_LCD_FSMCConfig",
+			"fnosram",
+			"T11_LCD_CtrlLinesConfig",
+			"    ",
+			"pmap",
+			"",
+			"Init",
+			"__AD_RegRead",
+			"__AD_RegWrite",
+			"I2S_1_DMA_STREAM",
+			"AUDIO_IF_PAUSE",
+			"AUDIO_IF_STOP",
+			"AUDIO_IF_OK",
+			"AUDIO_IF_FAIL",
+			"LEDS",
+			"  ",
+			"    ",
+			"SI_I2CADDR",
+			"    ",
+			"SI5351_I2C",
+			"plt->hal->i2c.write",
+			"  ",
+			"SI5351_STOPPED",
+			"DAC_AD1852.UsrData[0]",
+			"aif",
+			"sett->",
+			"sett",
+			"T11_Audio_IF->settings",
+			"dma_data_size",
+			"T11_Audio_IF.stream->",
+			"T11_Audio_IF.stream",
+			"T11_AUDIO_IF_SETTINGS_Typedef",
+			"T11_AUDIO_IF_STREAM_TypeDef",
+			"    ",
+			"T11_Audio_IF",
+			"AudioInterface.dac",
+			"AudioInterface.state",
+			"T11_AUDIO_IF_CLOCK_TypeDef",
+			"T11_AUDIO_IF_DAC_TypeDef",
+			"T11_AUDIO_IF_TypeDef",
+			"    ",
+			"T11_HSPI.instance",
+			"gpio_initstruct",
+			"nvic_initstruct",
+			"nvic_init",
+			"gpio_init",
+			"vol_db_L",
+			"vol_db_R",
+			"static __inline",
+			"__force_inline",
+			"__STATIC_INLINE",
+			"AudioStream.buffer_align_size",
+			"AudioStream.frame_size",
+			"crop_size",
+			"cpy_ptr",
+			"xfer_count",
+			"frame_bytes",
+			"AudioSettings.frame_size",
+			"AudioSettings.index",
+			"isoc_ch_bytes",
+			"isoc_frame_size",
+			"isoc_frame_bytes",
+			"XferPackedCount",
+			"IsocOutCpyPtr",
+			"pIsocOutCpy",
+			"__Request_Reset",
+			"_Endpoinds_SetState",
+			"_SamplingUpdate",
+			"_Request_Reset",
+			"_ControlRequest_Reset",
+			"_R",
+			"__Request_Standart",
+			"__Request_SetInterface",
+			"__Request_GetDescriptor",
+			"__Request_Class",
+			"__Request_SetCurrent",
+			"__Request_GetCurrent",
+			"__ControlRequest_Reset",
+			"__SamplingUpdate",
+			"__Endpoinds_SetState",
+			"USB_AUDIO_DESC_SIZE",
+			"AUDIO_FEATURE_TERMINAL_ID",
+			"0x07",
+			"0x09",
+			"0x0C",
+			"0x09",
+			"  ",
+			"AUDIO_CNTRL_STREAMING_UNIT",
+			"usbd_audio_CtlReq_RxReady",
+			"usbd_audio_ctl_req_RxReady",
+			"static __inline void",
+			"    ",
+			"void *pdev",
+			"*pdev,",
+			"uint8_t   ",
+			"void U",
+			"static void ",
+			"static void",
+			"USBD_DataInStage",
+			"USBD_DataOutStage",
+			"uint8_t",
+			"-D",
+			" \\",
+			"stm_lib",
+			"    ",
+			"eopf_microframe",
+			"    ",
+			"AUDIO_OUT_PACKET"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 21.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 127.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 88.0
+	},
+	"pinned_build_system": "ARM build",
+	"project": "neil-t11.sublime-project",
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"Drivers\\UI_NGL\\Spectrum.h"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 58.0,
+		"last_filter": "USBD_CtlContinueRx",
+		"selected_items":
+		[
+			[
+				"USBD_CtlContinueRx",
+				"USBD_CtlContinueRx"
+			],
+			[
+				"USBD_GetRxCount",
+				"USBD_GetRxCount"
+			],
+			[
+				"DCD_ReadDevInEP",
+				"DCD_ReadDevInEP"
+			],
+			[
+				"USBD_Setup",
+				"usbd_audio_Setup"
+			],
+			[
+				"USBD_SetupStage",
+				"USBD_SetupStage"
+			],
+			[
+				"USBD_Init",
+				"USBD_Init"
+			]
+		],
+		"width": 400.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 298.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
