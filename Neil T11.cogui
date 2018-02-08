@@ -11,80 +11,52 @@
 <folder appearance="1" expanded="2">
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
 <part id="0"/>
-<part id="3"/>
 <part id="1"/>
 <part id="2"/>
-<part id="4"/>
-<part id="5"/>
-<part id="6"/>
-<part id="7"/>
+<part id="3"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Projects/ARM/Neil T11/main.c" title="main.c" tooltip="C:/Projects/ARM/Neil T11/main.c" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" partName="main.c" path="C:/Projects/ARM/neil-T11-master/main.c" title="main.c" tooltip="C:/Projects/ARM/neil-T11-master/main.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/main.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1402" selectionTopPixel="540"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1233" selectionTopPixel="294"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="touchscreen.c" partName="touchscreen.c" path="C:/Projects/ARM/Neil T11/Drivers/TouchScreen/touchscreen.c" title="touchscreen.c" tooltip="C:/Projects/ARM/Neil T11/Drivers/TouchScreen/touchscreen.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/Drivers/TouchScreen/touchscreen.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9387" selectionTopPixel="2295"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="touchscreen.c" partName="touchscreen.c" path="C:/Projects/ARM/neil-T11-master/Drivers/USER_IF/TouchScreen/touchscreen.c" title="touchscreen.c" tooltip="C:/Projects/ARM/neil-T11-master/Drivers/USER_IF/TouchScreen/touchscreen.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/Drivers/USER_IF/TouchScreen/touchscreen.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="9728" selectionTopPixel="1670"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="touchscreen.h" partName="touchscreen.h" path="C:/Projects/ARM/Neil T11/Drivers/TouchScreen/touchscreen.h" title="touchscreen.h" tooltip="C:/Projects/ARM/Neil T11/Drivers/TouchScreen/touchscreen.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/Drivers/TouchScreen/touchscreen.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1012" selectionTopPixel="207"/>
+<editor id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_core.c" partName="usbd_core.c" path="C:/Projects/ARM/neil-T11-master/Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c" title="usbd_core.c" tooltip="C:/Projects/ARM/neil-T11-master/Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1896" selectionTopPixel="210"/>
 </editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" partName="stm32f4xx_it.c" path="C:/Projects/ARM/Neil T11/stm32f4xx_it.c" title="stm32f4xx_it.c" tooltip="C:/Projects/ARM/Neil T11/stm32f4xx_it.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/stm32f4xx_it.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="149" selectionOffset="6580" selectionTopPixel="2370"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" partName="stm32f4xx_gpio.h" path="C:/Projects/ARM/Neil T11/cmsis_lib/include/stm32f4xx_gpio.h" title="stm32f4xx_gpio.h" tooltip="C:/Projects/ARM/Neil T11/cmsis_lib/include/stm32f4xx_gpio.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/cmsis_lib/include/stm32f4xx_gpio.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="12" selectionOffset="3461" selectionTopPixel="1215"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.c" partName="stm32f4xx_gpio.c" path="C:/Projects/ARM/Neil T11/cmsis_lib/source/stm32f4xx_gpio.c" title="stm32f4xx_gpio.c" tooltip="C:/Projects/ARM/Neil T11/cmsis_lib/source/stm32f4xx_gpio.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/cmsis_lib/source/stm32f4xx_gpio.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="12083" selectionTopPixel="2520"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" partName="startup_stm32f4xx.c" path="C:/Projects/ARM/Neil T11/cmsis_boot/startup/startup_stm32f4xx.c" title="startup_stm32f4xx.c" tooltip="C:/Projects/ARM/Neil T11/cmsis_boot/startup/startup_stm32f4xx.c" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/cmsis_boot/startup/startup_stm32f4xx.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="14784" selectionTopPixel="3840"/>
-</editor>
-<editor id="org.eclipse.cdt.ui.editor.CEditor" name="NGL.h" partName="NGL.h" path="C:/Projects/ARM/Neil T11/Drivers/LCD_NGL/NGL.h" title="NGL.h" tooltip="C:/Projects/ARM/Neil T11/Drivers/LCD_NGL/NGL.h" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/Drivers/LCD_NGL/NGL.h"/>
-<editorState selectionHorizontalPixel="0" selectionLength="13" selectionOffset="10719" selectionTopPixel="3690"/>
+<editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_bsp.c" partName="usb_bsp.c" path="C:/Projects/ARM/neil-T11-master/Drivers/STM32_USB_OTG_Driver/src/usb_bsp.c" title="usb_bsp.c" tooltip="C:/Projects/ARM/neil-T11-master/Drivers/STM32_USB_OTG_Driver/src/usb_bsp.c" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/Neil T11/Drivers/STM32_USB_OTG_Driver/src/usb_bsp.c"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="10208" selectionTopPixel="1232"/>
 </editor>
 </editors>
 <views>
 <view id="org.eclipse.debug.ui.ExpressionView" partName="Expressions">
 <viewState>
-<ExpressionKeySet ExpKeys="TouchScreenADCBuffer,ADC_DATA,TouchCoordinate,ScreenSample,TouchScreen_Done,timer,ADC_DATA_0,ADC_DATA_1,NewState,"/>
+<ExpressionKeySet ExpKeys="T11_HSPI.tx.buf,"/>
 </viewState>
 </view>
 <view id="org.eclipse.ui.views.ProgressView" partName="Progress">
 <viewState/>
 </view>
 <view id="org.coocox.builder.ui.views.ProjectView" partName="Project">
-<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="11">
+<viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="16">
 <expanded>
 <element path="/Neil T11"/>
-<element path="/Neil T11/cmsis_boot"/>
-<element path="/Neil T11/DAC_Layer"/>
-<element path="/Neil T11/DAC_Layer/AD1852"/>
 <element path="/Neil T11/Drivers"/>
-<element path="/Neil T11/Drivers/FFT"/>
-<element path="/Neil T11/Drivers/I2S"/>
-<element path="/Neil T11/Drivers/STM32_USB_Device_Library"/>
-<element path="/Neil T11/Drivers/STM32_USB_Device_Library/Class"/>
-<element path="/Neil T11/Drivers/TouchScreen"/>
-<element path="/Neil T11/Drivers/UI_NGL"/>
-<element path="/Neil T11/Drivers/UI_NGL/Pages"/>
-<element path="/Neil T11/Drivers/UI_NGL/Pages/MainPage"/>
-<element path="/Neil T11/stdio"/>
-<element path="/Neil T11/syscalls"/>
+<element path="/Neil T11/Drivers/AUDIO_IF"/>
+<element path="/Neil T11/Drivers/HAL"/>
+<element path="/Neil T11/Drivers/HAL/SPI"/>
+<element path="/Neil T11/Drivers/USER_IF"/>
+<element path="/Neil T11/Drivers/USER_IF/TouchScreen"/>
 </expanded>
 <selection>
-<element path="/Neil T11/Drivers/STM32_USB_Device_Library/Core"/>
+<element path="/Neil T11/Drivers/HAL/SPI/SPI.c"/>
 </selection>
 </viewState>
 </view>
@@ -150,7 +122,7 @@
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@10341a7" ratio="0.67264575" ratioLeft="450" ratioRight="219" relationship="4" relative="org.eclipse.ui.internal.ViewStack@3af3cb">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@10341a7" ratio="0.67413217" ratioLeft="602" ratioRight="291" relationship="4" relative="org.eclipse.ui.internal.ViewStack@3af3cb">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.ProgressView" label="Progress"/>
@@ -162,7 +134,7 @@
 </presentation>
 </folder>
 </info>
-<info part="org.coocox.builder.ui.exampleView" ratio="0.2214342" ratioLeft="281" ratioRight="988" relationship="2" relative="org.eclipse.ui.internal.ViewStack@3af3cb"/>
+<info part="org.coocox.builder.ui.exampleView" ratio="0.20173365" ratioLeft="256" ratioRight="1013" relationship="2" relative="org.eclipse.ui.internal.ViewStack@3af3cb"/>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@67770f" ratio="0.71903324" ratioLeft="714" ratioRight="279" relationship="2" relative="org.coocox.builder.ui.exampleView">
 <folder appearance="2" expanded="2">
 <page content="org.coocox.component.ui.Help" label="LabelNotFound"/>
@@ -229,67 +201,48 @@
 <hide_toolbar_item_id id="org.coocox.welcome.ui.action.welcome"/>
 <hide_toolbar_item_id id="org.coocox.component.ui.ShowRepositoryAction"/>
 <hide_toolbar_item_id id="org.coocox.codebugger.configuration.coideProgramDownloadAction"/>
-<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.debug.ui.ExpressionView"/>
 <view id="org.eclipse.debug.ui.VariableView"/>
-<fastViewBars>
-<fastViewBar fastViewLocation="16384" id="org.eclipse.ui.internal.ViewStack@1d934bf" orientation="512" selectedTabId="org.coocox.builder.ui.views.ProjectView" style="0">
-<fastViews>
-<view id="org.coocox.builder.ui.views.ProjectView" ratio="0.2995984"/>
-</fastViews>
-</fastViewBar>
-</fastViewBars>
+<view id="org.coocox.builder.ui.views.ProjectView"/>
+<fastViewBars/>
 <viewLayoutRec closeable="false" id="org.eclipse.debug.ui.DebugView"/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d934bf">
-<folder appearance="2" expanded="0">
-<page content="org.coocox.builder.ui.views.ProjectView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@1d934bf">&#x0A;<folder activePageID="org.coocox.builder.ui.views.ProjectView" appearance="2" expanded="2">&#x0A;<page content="org.coocox.builder.ui.views.ProjectView" label="Project"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7493976" ratioLeft="933" ratioRight="312" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d934bf">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7493976" ratioLeft="933" ratioRight="312" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d934bf">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@11269e5" ratio="0.813154" ratioLeft="544" ratioRight="125" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1d934bf">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@11269e5" ratio="0.74244124" ratioLeft="663" ratioRight="230" relationship="4" relative="org.eclipse.ui.internal.ViewStack@1d934bf">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@1e66f47" ratio="0.49959838" ratioLeft="622" ratioRight="623" relationship="2" relative="org.eclipse.ui.internal.ViewStack@11269e5">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@1e66f47" ratio="0.49959838" ratioLeft="622" ratioRight="623" relationship="2" relative="org.eclipse.ui.internal.ViewStack@11269e5">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.MemoryView" label="LabelNotFound"/>
 <page content="org.eclipse.cdt.debug.ui.memory.memorybrowser.MemoryBrowser" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.ModuleView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@193bafc" ratio="0.7493976" ratioLeft="933" ratioRight="312" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d934bf">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@193bafc" ratio="0.7493976" ratioLeft="933" ratioRight="312" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d934bf">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.cdt.dsf.debug.ui.disassembly.view" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <page content="org.coocox.coassistant.view.CoAssistantView_debug" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
-<info part="org.eclipse.ui.editorss" ratio="0.1930654" ratioLeft="245" ratioRight="1024" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d934bf"/>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@ca9578" ratio="0.7487923" ratioLeft="930" ratioRight="312" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.debug.ui.ExpressionView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
+<info part="org.eclipse.ui.editorss" ratio="0.22695035" ratioLeft="288" ratioRight="981" relationship="2" relative="org.eclipse.ui.internal.ViewStack@1d934bf"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@ca9578" ratio="0.6329243" ratioLeft="619" ratioRight="359" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.ExpressionView" label="Expressions"/>
 <page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.coocox.codebugger.trace.ui.traceview" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
@@ -301,162 +254,172 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/TouchScreen/touchscreen.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/stm32f4xx_it.c"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/main.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/cmsis_boot/startup/startup_stm32f4xx.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/cmsis_lib/source/stm32f4xx_gpio.c"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/LCD_NGL/NGL.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/USER_IF/t11_user_if.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/stm32f4xx_it.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/HAL/I2S/I2S.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/USER_IF/pages/MainPage/mainpage_fillbars.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/USER_IF/peeklevel.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/AUDIO_IF/t11_audio_if.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/AUDIO_IF/t11_audio_if_types.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/AUDIO_IF/AD1852/AD1852.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/cmsis_boot/stm32f4xx.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/HAL/SPI/SPI.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/stm_lib/include/stm32f4xx_spi.h"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/USER_IF/TouchScreen/touchscreen.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/stm32f4xx_it.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/Neil T11/Drivers/STM32_USB_OTG_Driver/src/usb_bsp.c"/>
 </editors>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="1280" y="10"/>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8367" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6617" y="0"/>
+<item historyLabel="mainpage_fillbars.h" index="4">
+<position info="not_deleted" x="1771" y="13"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="1109" y="5"/>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8367" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
+<item historyLabel="peeklevel.c" index="5">
+<position info="not_deleted" x="1683" y="42"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8367" y="0"/>
+</item>
+<item historyLabel="peeklevel.c" index="5">
+<position info="not_deleted" x="1402" y="109"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="7998" y="0"/>
+</item>
+<item historyLabel="peeklevel.c" index="5">
+<position info="not_deleted" x="1402" y="109"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="7998" y="0"/>
+</item>
+<item historyLabel="I2S.c" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="7998" y="0"/>
+</item>
+<item historyLabel="t11_audio_if.c" index="6">
 <position/>
 </item>
-<item historyLabel="startup_stm32f4xx.c" index="3">
-<position info="not_deleted" x="14784" y="0"/>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8282" y="21"/>
 </item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1402" y="0"/>
+<item historyLabel="t11_audio_if.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
+<item historyLabel="t11_audio_if_types.h" index="7">
+<position info="not_deleted" x="2715" y="0"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8282" y="21"/>
+</item>
+<item historyLabel="t11_audio_if_types.h" index="7">
+<position info="not_deleted" x="2749" y="0"/>
+</item>
+<item historyLabel="t11_audio_if.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="AD1852.c" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="t11_audio_if_types.h" index="7">
+<position info="not_deleted" x="2041" y="1"/>
+</item>
+<item historyLabel="stm32f4xx.h" index="9">
+<position info="not_deleted" x="17323" y="10"/>
+</item>
+<item historyLabel="t11_audio_if_types.h" index="7">
+<position info="not_deleted" x="2015" y="15"/>
+</item>
+<item historyLabel="t11_audio_if.c" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="t11_audio_if_types.h" index="7">
+<position info="not_deleted" x="2015" y="15"/>
+</item>
+<item historyLabel="AD1852.c" index="8">
+<position info="not_deleted" x="1679" y="0"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8282" y="21"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8126" y="44"/>
+</item>
+<item historyLabel="stm32f4xx_it.c" index="2">
+<position info="not_deleted" x="6235" y="50"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8126" y="44"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1679" y="0"/>
+</item>
+<item historyLabel="t11_user_if.c" index="1">
+<position info="not_deleted" x="8123" y="50"/>
+</item>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1543" y="0"/>
+</item>
+<item historyLabel="SPI.c" index="10">
 <position/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6410" y="0"/>
+<item historyLabel="stm32f4xx_spi.h" index="11">
+<position info="not_deleted" x="8451" y="24"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6556" y="0"/>
+<item historyLabel="SPI.c" index="10">
+<position/>
 </item>
-<item historyLabel="stm32f4xx_gpio.c" index="4">
-<position info="not_deleted" x="11907" y="0"/>
+<item historyLabel="touchscreen.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_gpio.c" index="4">
-<position info="not_deleted" x="12083" y="0"/>
+<item historyLabel="SPI.c" index="10">
+<position/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="19468" y="0"/>
+<item historyLabel="touchscreen.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="19508" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="13">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="19556" y="0"/>
+<item historyLabel="touchscreen.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="19604" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="13">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="19645" y="0"/>
+<item historyLabel="touchscreen.c" index="12">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="19468" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="13">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="19508" y="0"/>
+<item historyLabel="SPI.c" index="10">
+<position info="not_deleted" x="2934" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6556" y="0"/>
+<item historyLabel="stm32f4xx_it.c" index="13">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6498" y="0"/>
+<item historyLabel="touchscreen.c" index="12">
+<position info="not_deleted" x="9728" y="0"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="14435" y="20"/>
+<item historyLabel="main.c" index="0">
+<position info="not_deleted" x="1233" y="0"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6498" y="0"/>
+<item historyLabel="usbd_core.c" index="14">
+<position info="not_deleted" x="1896" y="0"/>
 </item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="14435" y="20"/>
+<item historyLabel="usb_bsp.c" index="15">
+<position info="not_deleted" x="8948" y="27"/>
 </item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6498" y="0"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="14435" y="20"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6498" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6413" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6410" y="0"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="19468" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6410" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6652" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="3">
-<position info="not_deleted" x="14784" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1402" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6566" y="0"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="8431" y="0"/>
-</item>
-<item historyLabel="NGL.h" index="5">
-<position info="not_deleted" x="10719" y="13"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="8431" y="0"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="8439" y="0"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="1881" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6566" y="0"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="8397" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6580" y="149"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="8915" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="3">
-<position info="not_deleted" x="14784" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1687" y="0"/>
-</item>
-<item historyLabel="stm32f4xx_it.c" index="1">
-<position info="not_deleted" x="6580" y="149"/>
-</item>
-<item historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="9932" y="0"/>
-</item>
-<item historyLabel="startup_stm32f4xx.c" index="3">
-<position info="not_deleted" x="14784" y="0"/>
-</item>
-<item historyLabel="main.c" index="2">
-<position info="not_deleted" x="1402" y="0"/>
-</item>
-<item active="true" historyLabel="touchscreen.c" index="0">
-<position info="not_deleted" x="9033" y="0"/>
+<item active="true" historyLabel="usb_bsp.c" index="15">
+<position info="not_deleted" x="10210" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -465,45 +428,50 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="NGL.h" tooltip="Neil T11/Drivers/LCD_NGL/NGL.h">
-<persistable path="/Neil T11/Drivers/LCD_NGL/NGL.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usb_bsp.c" tooltip="Neil T11/Drivers/STM32_USB_OTG_Driver/src/usb_bsp.c">
+<persistable path="/Neil T11/Drivers/STM32_USB_OTG_Driver/src/usb_bsp.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="Neil T11/cmsis_boot/startup/startup_stm32f4xx.c">
-<persistable path="/Neil T11/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="usbd_core.c" tooltip="Neil T11/Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c">
+<persistable path="/Neil T11/Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.c" tooltip="Neil T11/cmsis_lib/source/stm32f4xx_gpio.c">
-<persistable path="/Neil T11/cmsis_lib/source/stm32f4xx_gpio.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="SPI.c" tooltip="Neil T11/Drivers/HAL/SPI/SPI.c">
+<persistable path="/Neil T11/Drivers/HAL/SPI/SPI.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_gpio.h" tooltip="Neil T11/cmsis_lib/include/stm32f4xx_gpio.h">
-<persistable path="/Neil T11/cmsis_lib/include/stm32f4xx_gpio.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_it.c" tooltip="Neil T11/stm32f4xx_it.c">
+<persistable path="/Neil T11/stm32f4xx_it.c"/>
 </file>
-<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
-<persistable>&#x0A;<subPage/>
-</persistable>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="touchscreen.c" tooltip="Neil T11/Drivers/USER_IF/TouchScreen/touchscreen.c">
+<persistable path="/Neil T11/Drivers/USER_IF/TouchScreen/touchscreen.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="colors 5-6-5.h" tooltip="Neil T11/Drivers/LCD_NGL/colors 5-6-5.h">
-<persistable path="/Neil T11/Drivers/LCD_NGL/colors 5-6-5.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_spi.h" tooltip="Neil T11/stm_lib/include/stm32f4xx_spi.h">
+<persistable path="/Neil T11/stm_lib/include/stm32f4xx_spi.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="colors 5-6-5.c" tooltip="Neil T11/Drivers/LCD_NGL/colors 5-6-5.c">
-<persistable path="/Neil T11/Drivers/LCD_NGL/colors 5-6-5.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx.h" tooltip="Neil T11/cmsis_boot/stm32f4xx.h">
+<persistable path="/Neil T11/cmsis_boot/stm32f4xx.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="MainPage.c" tooltip="Neil T11/Drivers/UI_NGL/Pages/MainPage/MainPage.c">
-<persistable path="/Neil T11/Drivers/UI_NGL/Pages/MainPage/MainPage.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="AD1852.c" tooltip="Neil T11/Drivers/AUDIO_IF/AD1852/AD1852.c">
+<persistable path="/Neil T11/Drivers/AUDIO_IF/AD1852/AD1852.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="platform.c" tooltip="Neil T11/platform.c">
-<persistable path="/Neil T11/platform.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="t11_audio_if_types.h" tooltip="Neil T11/Drivers/AUDIO_IF/t11_audio_if_types.h">
+<persistable path="/Neil T11/Drivers/AUDIO_IF/t11_audio_if_types.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="startup_stm32f4xx.c" tooltip="FFT_Ex/cmsis_boot/startup/startup_stm32f4xx.c">
-<persistable path="/FFT_Ex/cmsis_boot/startup/startup_stm32f4xx.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="t11_audio_if.c" tooltip="Neil T11/Drivers/AUDIO_IF/t11_audio_if.c">
+<persistable path="/Neil T11/Drivers/AUDIO_IF/t11_audio_if.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="FFT_Ex/cmsis_boot/system_stm32f4xx.c">
-<persistable path="/FFT_Ex/cmsis_boot/system_stm32f4xx.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="I2S.c" tooltip="Neil T11/Drivers/HAL/I2S/I2S.c">
+<persistable path="/Neil T11/Drivers/HAL/I2S/I2S.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_conf.h" tooltip="FFT_Ex/cmsis_boot/stm32f4xx_conf.h">
-<persistable path="/FFT_Ex/cmsis_boot/stm32f4xx_conf.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="peeklevel.c" tooltip="Neil T11/Drivers/USER_IF/peeklevel.c">
+<persistable path="/Neil T11/Drivers/USER_IF/peeklevel.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_exti.h" tooltip="Neil T11/cmsis_lib/include/stm32f4xx_exti.h">
-<persistable path="/Neil T11/cmsis_lib/include/stm32f4xx_exti.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="mainpage_fillbars.h" tooltip="Neil T11/Drivers/USER_IF/pages/MainPage/mainpage_fillbars.h">
+<persistable path="/Neil T11/Drivers/USER_IF/pages/MainPage/mainpage_fillbars.h"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="t11_user_if.c" tooltip="Neil T11/Drivers/USER_IF/t11_user_if.c">
+<persistable path="/Neil T11/Drivers/USER_IF/t11_user_if.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="t11_hal_types.h" tooltip="Neil T11/Drivers/HAL/t11_hal_types.h">
+<persistable path="/Neil T11/Drivers/HAL/t11_hal_types.h"/>
 </file>
 </mruList>
 </workbench>

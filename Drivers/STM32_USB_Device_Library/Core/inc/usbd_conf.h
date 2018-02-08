@@ -29,7 +29,7 @@
   * @{
   */
 /* Use this section to modify the number of supported interfaces and configurations.
-   Note that if you modify these parameters, you have to modify the descriptors 
+   Note that if you modify these parameters, you have to modify the descriptors
    accordingly in usbd_audio_core.c file */
 #define USBD_CFG_MAX_NUM                1
 #define USBD_ITF_MAX_NUM                1
@@ -37,44 +37,44 @@
 
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup USB_AUDIO_Class_Layer_Parameter
   * @{
-  */ 
+  */
 
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup USB_CONF_Exported_Types
   * @{
-  */ 
+  */
 /**
   * @}
-  */ 
+  */
 
 
 /** @defgroup USB_CONF_Exported_Macros
   * @{
-  */ 
+  */
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup USB_CONF_Exported_Variables
   * @{
-  */ 
+  */
 /**
   * @}
-  */ 
+  */
 
 /** @defgroup USB_CONF_Exported_FunctionsPrototype
   * @{
-  */ 
+  */
 /**
   * @}
-  */ 
+  */
 
 
 #endif //__USBD_CONF__H__

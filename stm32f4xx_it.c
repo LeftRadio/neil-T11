@@ -19,7 +19,7 @@
   *
   * <h2><center>&copy; COPYRIGHT 2011 STMicroelectronics</center></h2>
   ******************************************************************************
-  */ 
+  */
 
 /* Includes ------------------------------------------------------------------*/
 #include "usb_core.h"
@@ -27,7 +27,6 @@
 #include "usbd_audio_core.h"
 #include "touchscreen.h"
 #include "platform.h"
-#include "Global_Init.h"
 
 /* Private typedef -----------------------------------------------------------*/
 /* Private define ------------------------------------------------------------*/
@@ -166,11 +165,10 @@ void SysTick_Handler(void)
   * @param  None
   * @retval None
   */
-void EXTI0_IRQHandler(void)
-{
-//	UserButtonPressed = 0x01;
-	/* Clear the EXTI line pending bit */
-//	EXTI_ClearITPendingBit(USER_BUTTON_EXTI_LINE);
+void EXTI0_IRQHandler(void) {
+    //	UserButtonPressed = 0x01;
+    /* Clear the EXTI line pending bit */
+    //	EXTI_ClearITPendingBit(USER_BUTTON_EXTI_LINE);
 }
 
 /**
@@ -178,18 +176,17 @@ void EXTI0_IRQHandler(void)
   * @param  None
   * @retval None
   */
-void OTG_FS_WKUP_IRQHandler(void)
-{
-//  if(USB_OTG_dev.cfg.low_power)
-//  {
-//	/* Reset SLEEPDEEP and SLEEPONEXIT bits */
-//	SCB->SCR &= (uint32_t)~((uint32_t)(SCB_SCR_SLEEPDEEP_Msk | SCB_SCR_SLEEPONEXIT_Msk));
-//
-//	/* After wake-up from sleep mode, reconfigure the system clock */
-//	SystemInit();
-//    USB_OTG_UngateClock(&USB_OTG_dev);
-//  }
-//  EXTI_ClearITPendingBit(EXTI_Line18);
+void OTG_FS_WKUP_IRQHandler(void) {
+    //  if(USB_OTG_dev.cfg.low_power)
+    //  {
+    //	/* Reset SLEEPDEEP and SLEEPONEXIT bits */
+    //	SCB->SCR &= (uint32_t)~((uint32_t)(SCB_SCR_SLEEPDEEP_Msk | SCB_SCR_SLEEPONEXIT_Msk));
+    //
+    //	/* After wake-up from sleep mode, reconfigure the system clock */
+    //	SystemInit();
+    //    USB_OTG_UngateClock(&USB_OTG_dev);
+    //  }
+    //  EXTI_ClearITPendingBit(EXTI_Line18);
 }
 
 /**
@@ -197,7 +194,6 @@ void OTG_FS_WKUP_IRQHandler(void)
   * @param  None
   * @retval None
   */
-
 #ifndef USE_USB_OTG_HS
 void OTG_FS_IRQHandler(void)
 #else
@@ -207,16 +203,15 @@ void OTG_HS_IRQHandler(void)
   USBD_OTG_ISR_Handler (&USB_OTG_dev);
 }
 
-
 #ifdef USB_OTG_HS_DEDICATED_EP1_ENABLED
+
 /**
   * @brief  This function handles EP1_IN Handler.
   * @param  None
   * @retval None
   */
-void OTG_HS_EP1_IN_IRQHandler(void)
-{
-  USBD_OTG_EP1IN_ISR_Handler (&USB_OTG_dev);
+void OTG_HS_EP1_IN_IRQHandler(void) {
+    USBD_OTG_EP1IN_ISR_Handler (&USB_OTG_dev);
 }
 
 /**
@@ -224,81 +219,81 @@ void OTG_HS_EP1_IN_IRQHandler(void)
   * @param  None
   * @retval None
   */
-void OTG_HS_EP1_OUT_IRQHandler(void)
-{
-  USBD_OTG_EP1OUT_ISR_Handler (&USB_OTG_dev);
+void OTG_HS_EP1_OUT_IRQHandler(void) {
+    USBD_OTG_EP1OUT_ISR_Handler (&USB_OTG_dev);
 }
+
 #endif
 
-
-volatile long timer = 0;
-
-
 /**
-  * @brief  This function handles External line 4 interrupt request.
+  * @brief  This function handles DMA1_Stream7_IRQHandler
   * @param  None
   * @retval : None
   */
-void EXTI2_IRQHandler(void)
-{
-	if(EXTI_GetITStatus(EXTI_Line2) != RESET)
-	{
-		/* Clear the  EXTI line 2 pending bit */
-		EXTI_ClearITPendingBit(EXTI_Line2);
-
-		if(TouchScreen_Done == RESET)
-		{
-			NVIC_DisableIRQ(EXTI2_IRQn);
-			TouchScreen_SetState(Touch_AxisX_State);
-			TIM_Cmd(TIM3, ENABLE);
-		}
-//		else
-//		{
-//			while((GPIO_ReadInputDataBit(GPIOA, GPIO_Pin_6) != (uint8_t)Bit_RESET));
-//			TouchScreen_SetState(Touch_Interrupt);
-//			TouchScreen_Done = RESET;
-//		}
-	}
+void DMA1_Stream7_IRQHandler(void) {
+    if (DMA_GetFlagStatus(DMA1_Stream7, DMA_FLAG_TCIF7) != RESET) {
+        DMA_ClearFlag(DMA1_Stream7, DMA_FLAG_TCIF7);
+        /* */
+        T11_Platform.hal->i2s->irq_callback();
+        /* */
+        T11_Platform.audio_if->dac->i2s_tx_complite = SET;
+    }
 }
 
+/**
+  * @brief  This function handles SPI interrupt request.
+  * @param  None
+  * @retval None
+  */
+void SPI1_IRQHandler(void) {
+    /* */
+    T11_Platform.hal->spi->irq_callback();
+}
 
 /**
-  * @brief  This function handles DMA1_Channel1_IRQHandler
+  * @brief  This function handles touchscreen external line 2 interrupt request.
   * @param  None
   * @retval : None
   */
-void DMA2_Stream0_IRQHandler(void)
-{
-	if(DMA_GetITStatus(DMA2_Stream0, DMA_IT_TCIF0) != RESET)
-	{
-//		T11_LED_Toggle(T11_LED_0);
-
-//		DMA2_Stream0->CR &= ~(uint32_t)DMA_SxCR_EN;
-//		ADC_Cmd(ADC3, DISABLE);
-//		SCB_DEMCR |= 0x01000000;
-//		DWT_CYCCNT  = 0;
-//		DWT_CONTROL|= 1; // enable counter
-
-		TIM_Cmd(TIM3, DISABLE);
-		TouchScreen_UpdateState();
-
-
-
-
-//		timer = DWT_CYCCNT;
-//		DWT_CONTROL &= ~1; // disable counter
-
-//		/* Run the DMA Stream */
-//		DMA2_Stream0->CR |= (uint32_t)DMA_SxCR_EN;
-//		ADC_Cmd(ADC3, ENABLE);
-//		ADC_SoftwareStartConv(ADC3);
-	}
-
-	/* Clear DMA2 stream 0 interrupt pending bits */
-	DMA_ClearITPendingBit(DMA2_Stream0, DMA_IT_FEIF0 | DMA_IT_DMEIF0 | DMA_IT_TEIF0 | DMA_IT_HTIF0 | DMA_IT_TCIF0);
+void EXTI2_IRQHandler(void) {
+    if(EXTI_GetITStatus(EXTI_Line2) != RESET) {
+        EXTI->PR = EXTI_Line2;
+        /*  */
+        T11_Platform.user_if->touchscreen->foops->event(
+            0,
+            Touch_Interrupt
+        );
+    }
 }
 
+/**
+  * @brief  This function handles touchscreen ADC interrupt request.
+  * @param  None
+  * @retval : None
+  */
+void ADC_IRQHandler(void) {
+    static uint32_t samples_cnt = 0;
+    static long ADC_sum = 0;
+    uint8_t itmask = (uint8_t)(ADC_IT_EOC >> 8);
 
+    if ( (ADC1->SR & itmask ) != (uint32_t)RESET) {
+        ADC1->SR = ~(uint32_t)itmask;
+
+        ADC_sum += (uint16_t)ADC1->DR;
+
+        if(++samples_cnt >= TOUC_ADC_DATA_CNT) {
+            /* stop ADC */
+            TIM3->CR1 &= ~TIM_CR1_CEN;
+            /*  */
+            T11_Platform.user_if->touchscreen->foops->event(
+                ADC_sum / TOUC_ADC_DATA_CNT,
+                Touch_Data
+            );
+            /* reset vars */
+            ADC_sum = samples_cnt = 0;
+        }
+    }
+}
 
 
 /******************* (C) COPYRIGHT 2011 STMicroelectronics *****END OF FILE****/

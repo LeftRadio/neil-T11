@@ -4,9 +4,9 @@
     <Device manufacturerId="9" manufacturerName="ST" chipId="487" chipName="STM32F407VE" boardId="" boardName=""/>
     <BuildOption>
       <Compile>
-        <Option name="OptimizationLevel" value="1"/>
+        <Option name="OptimizationLevel" value="0"/>
         <Option name="UseFPU" value="0"/>
-        <Option name="UserEditCompiler" value="-fno-strict-aliasing"/>
+        <Option name="UserEditCompiler" value="-fno-strict-aliasing; -fearly-inlining"/>
         <Option name="SupportCPlusplus" value="0"/>
         <Option name="FPU" value="2"/>
         <Includepaths>
@@ -20,6 +20,7 @@
           <Define name="USE_USB_OTG_HS"/>
           <Define name="ARM_MATH_CM4"/>
           <Define name="__FPU_PRESENT"/>
+          <Define name="USE_DEVICE_MODE"/>
         </DefinedSymbols>
       </Compile>
       <Link useDefault="0">
@@ -32,7 +33,7 @@
         <Option name="Library" value="Retarget"/>
         <Option name="UserEditLinker" value="--entry=main; "/>
         <LinkedLibraries>
-          <Libset dir="drivers\lcd_ngl\" libs="ngl"/>
+          <Libset dir="drivers\user_if\ngl\" libs="ngl"/>
           <Libset dir="" libs="arm_cortexm4lf_math"/>
         </LinkedLibraries>
         <MemoryAreas debugInFlashNotRAM="1">
@@ -100,183 +101,176 @@
     <Component id="936" name="USB STM32F4xx Drivers" path="" type="2"/>
   </Components>
   <Files>
-    <File name="cmsis_lib/include/stm32f4xx_flash.h" path="cmsis_lib/include/stm32f4xx_flash.h" type="1"/>
-    <File name="Drivers/UI_NGL/Spectrum.h" path="Drivers/UI_NGL/Spectrum.h" type="1"/>
-    <File name="Drivers/UI_NGL/Fonts" path="" type="2"/>
-    <File name="Drivers/SysTick/stm32f10x_systick.c" path="Drivers/SysTick/stm32f10x_systick.c" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_spi.c" path="stm_lib/source/stm32f4xx_spi.c" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_dma.h" path="stm_lib/include/stm32f4xx_dma.h" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_pwr.c" path="stm_lib/source/stm32f4xx_pwr.c" type="1"/>
+    <File name="Drivers/USER_IF/bitmaps/Globe.c" path="Drivers/USER_IF/bitmaps/Globe.c" type="1"/>
+    <File name="Drivers/USER_IF/pages/MainPage/mainpage_buttons.h" path="Drivers/USER_IF/pages/MainPage/mainpage_buttons.h" type="1"/>
+    <File name="Drivers/USER_IF/bitmaps/List.c" path="Drivers/USER_IF/bitmaps/List.c" type="1"/>
+    <File name="Drivers/HAL/I2S/I2S.c" path="Drivers/HAL/I2S/I2S.c" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_core.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_core.h" type="1"/>
-    <File name="Drivers/LCD_NGL/colors 5-6-5.c" path="Drivers/LCD_NGL/colors 5-6-5.c" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_crc.h" path="cmsis_lib/include/stm32f4xx_crc.h" type="1"/>
-    <File name="DAC_Layer" path="" type="2"/>
-    <File name="Drivers/Si5355/Si5351.c" path="Drivers/Si5351/Si5351.c" type="1"/>
-    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="Drivers/USER_IF/pages/MainPage" path="" type="2"/>
+    <File name="Drivers/USER_IF" path="" type="2"/>
     <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
-    <File name="Drivers/FFT/FFT.h" path="Drivers/FFT/FFT.h" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_usr.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_usr.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
+    <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
+    <File name="Drivers/FFT/FFT.h" path="Drivers/FFT/FFT.h" type="1"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/stop_on.c" path="Drivers/UI_NGL/Bitmaps/stop_on.c" type="1"/>
-    <File name="platform.h" path="platform.h" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/SettingsPage/SettingsPage_Labels.h" path="Drivers/UI_NGL/Pages/SettingsPage/SettingsPage_Labels.h" type="1"/>
-    <File name="Drivers/UI_NGL/Fonts/Square721_BT_14.c" path="Drivers/UI_NGL/Fonts/Square721_BT_14.c" type="1"/>
+    <File name="Drivers/HAL/I2C" path="" type="2"/>
+    <File name="Drivers/USER_IF/peeklevel.h" path="Drivers/USER_IF/peeklevel.h" type="1"/>
     <File name="stm32f4xx_it.c" path="stm32f4xx_it.c" type="1"/>
-    <File name="Drivers/TouchScreen/touchscreen.h" path="Drivers/TouchScreen/touchscreen.h" type="1"/>
-    <File name="Drivers/LCD_NGL/colors 5-6-5.h" path="Drivers/LCD_NGL/colors 5-6-5.h" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_exti.c" path="stm_lib/source/stm32f4xx_exti.c" type="1"/>
+    <File name="Drivers/HAL/SysTick/stm32f10x_systick.h" path="Drivers/HAL/SysTick/stm32f10x_systick.h" type="1"/>
     <File name="syscalls/syscalls.c" path="syscalls/syscalls.c" type="1"/>
-    <File name="Drivers/SPI/SPI.h" path="Drivers/SPI/SPI.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/play_on.c" path="Drivers/UI_NGL/Bitmaps/play_on.c" type="1"/>
+    <File name="Drivers/HAL/BKP_SRAM4K/BKP_SRAM4K.c" path="Drivers/HAL/BKP_SRAM4K/BKP_SRAM4K.c" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Class/usbd_audio_core.h" path="Drivers/STM32_USB_Device_Library/Class/audio/inc/usbd_audio_core.h" type="1"/>
-    <File name="Drivers/Si5355/Si5351.h" path="Drivers/Si5351/Si5351.h" type="1"/>
-    <File name="Drivers/STM32_USB_Device_Library/Class/Audio_Interface.c" path="DAC_Layer/Audio_Interface.c" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_core.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_core.h" type="1"/>
-    <File name="Drivers/UI_NGL/Fonts/Square721_BT_8.c" path="Drivers/UI_NGL/Fonts/Square721_BT_8.c" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/pause_on.c" path="Drivers/UI_NGL/Bitmaps/pause_on.c" type="1"/>
-    <File name="Drivers/SysTick/stm32f10x_systick.h" path="Drivers/SysTick/stm32f10x_systick.h" type="1"/>
-    <File name="Drivers/TouchScreen" path="" type="2"/>
+    <File name="Drivers/HAL/I2C/I2C.h" path="Drivers/HAL/I2C/I2C.h" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_crc.h" path="stm_lib/include/stm32f4xx_crc.h" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_conf.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_conf.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_rtc.c" path="cmsis_lib/source/stm32f4xx_rtc.c" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_dbgmcu.c" path="stm_lib/source/stm32f4xx_dbgmcu.c" type="1"/>
     <File name="stdio/printf.c" path="stdio/printf.c" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver/inc" path="" type="2"/>
-    <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_syscfg.c" path="cmsis_lib/source/stm32f4xx_syscfg.c" type="1"/>
-    <File name="Drivers/UI_NGL/Fonts/Square721_BT_11.c" path="Drivers/UI_NGL/Fonts/Square721_BT_11.c" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/SettingsPage/SettingsPage_Buttons.h" path="Drivers/UI_NGL/Pages/SettingsPage/SettingsPage_Buttons.h" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_pwr.h" path="cmsis_lib/include/stm32f4xx_pwr.h" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/SettingsPage/SettingsPage.c" path="Drivers/UI_NGL/Pages/SettingsPage/SettingsPage.c" type="1"/>
-    <File name="Drivers/I2C" path="" type="2"/>
+    <File name="Drivers/HAL/t11_hal.c" path="Drivers/HAL/t11_hal.c" type="1"/>
+    <File name="Drivers/HAL/RELAY" path="" type="2"/>
+    <File name="Drivers/HAL/RELAY/relay.c" path="Drivers/HAL/RELAY/relay.c" type="1"/>
+    <File name="Drivers/HAL/BKP_SRAM4K" path="" type="2"/>
+    <File name="Drivers/AUDIO_IF/AD1852/AD1852.h" path="Drivers/AUDIO_IF/AD1852/AD1852.h" type="1"/>
+    <File name="Drivers/HAL/SysTick" path="" type="2"/>
+    <File name="Drivers/USER_IF/peeklevel.c" path="Drivers/USER_IF/peeklevel.c" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="stdio" path="" type="2"/>
-    <File name="cmsis_lib/source/stm32f4xx_rcc.c" path="cmsis_lib/source/stm32f4xx_rcc.c" type="1"/>
-    <File name="Drivers/UI_NGL/Fonts/Fonts.h" path="Drivers/UI_NGL/Fonts/Fonts.h" type="1"/>
+    <File name="Drivers/USER_IF/bitmaps" path="" type="2"/>
+    <File name="Drivers/AUDIO_IF/AD1852/AD1852.c" path="Drivers/AUDIO_IF/AD1852/AD1852.c" type="1"/>
     <File name="cmsis/core_cmInstr.h" path="cmsis/core_cmInstr.h" type="1"/>
-    <File name="Drivers/STM32_USB_Device_Library/Class/Audio_Interface.h" path="DAC_Layer/Audio_Interface.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_pwr.c" path="cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/OFFTimerPage/OFFTimerPage_Labels.h" path="Drivers/UI_NGL/Pages/OFFTimerPage/OFFTimerPage_Labels.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/minus.c" path="Drivers/UI_NGL/Bitmaps/minus.c" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/forward_on.c" path="Drivers/UI_NGL/Bitmaps/forward_on.c" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_flash.h" path="stm_lib/include/stm32f4xx_flash.h" type="1"/>
+    <File name="Drivers/USER_IF/NGL/NGL_types.h" path="Drivers/USER_IF/NGL/NGL_types.h" type="1"/>
+    <File name="Drivers/HAL/SysTick/systick.h" path="Drivers/HAL/SysTick/systick.h" type="1"/>
+    <File name="Drivers/AUDIO_IF/Si5351/Si5351_registers.h" path="Drivers/AUDIO_IF/Si5351/Si5351_registers.h" type="1"/>
+    <File name="Drivers/AUDIO_IF/Si5351" path="" type="2"/>
+    <File name="stm_lib/include/stm32f4xx_i2c.h" path="stm_lib/include/stm32f4xx_i2c.h" type="1"/>
+    <File name="Drivers/HAL" path="" type="2"/>
     <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_defines.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_defines.h" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_adc.h" path="cmsis_lib/include/stm32f4xx_adc.h" type="1"/>
-    <File name="Drivers/LCD_NGL/NGL.h" path="Drivers/LCD_NGL/NGL.h" type="1"/>
-    <File name="Drivers/Si5355/Si5351_registers.h" path="Drivers/Si5351/Si5351_registers.h" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/MainPage/MainPage_Buttons.h" path="Drivers/UI_NGL/Pages/MainPage/MainPage_Buttons.h" type="1"/>
+    <File name="Drivers/USER_IF/TouchScreen/touchscreen.h" path="Drivers/USER_IF/TouchScreen/touchscreen.h" type="1"/>
+    <File name="Drivers/HAL/RELAY/relay.h" path="Drivers/HAL/RELAY/relay.h" type="1"/>
+    <File name="Drivers/USER_IF/pages" path="" type="2"/>
+    <File name="Drivers/AUDIO_IF/t11_audio_if_types.h" path="Drivers/AUDIO_IF/t11_audio_if_types.h" type="1"/>
+    <File name="Drivers/USER_IF/t11_user_if.c" path="Drivers/USER_IF/t11_user_if.c" type="1"/>
+    <File name="Drivers/AUDIO_IF/AD1852" path="" type="2"/>
     <File name="cmsis_boot/system_stm32f4xx.c" path="cmsis_boot/system_stm32f4xx.c" type="1"/>
+    <File name="Drivers/HAL/SPI/SPI.h" path="Drivers/HAL/SPI/SPI.h" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver/src/usb_core.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_core.c" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_dbgmcu.h" path="stm_lib/include/stm32f4xx_dbgmcu.h" type="1"/>
     <File name="cmsis/math_helper.c" path="cmsis/math_helper.c" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_tim.h" path="stm_lib/include/stm32f4xx_tim.h" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd_int.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd_int.h" type="1"/>
+    <File name="Drivers/USER_IF/bitmaps/Work.c" path="Drivers/USER_IF/bitmaps/Work.c" type="1"/>
     <File name="cmsis" path="" type="2"/>
+    <File name="Drivers/USER_IF/pages/MainPage/mainpage_graphscales.h" path="Drivers/USER_IF/pages/MainPage/mainpage_graphscales.h" type="1"/>
+    <File name="stm_lib" path="" type="2"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_core.c" type="1"/>
-    <File name="cmsis_lib" path="" type="2"/>
-    <File name="Drivers/UI_NGL/Bitmaps/Globe.c" path="Drivers/UI_NGL/Bitmaps/Globe.c" type="1"/>
+    <File name="Drivers/HAL/t11_hal_types.h" path="Drivers/HAL/t11_hal_types.h" type="1"/>
+    <File name="Drivers/AUDIO_IF/PGA2311/pga2311.h" path="Drivers/AUDIO_IF/PGA2311/pga2311.h" type="1"/>
     <File name="Drivers/FFT" path="" type="2"/>
-    <File name="Drivers/LCD_NGL" path="" type="2"/>
     <File name="Drivers/STM32_USB_Device_Library/Class" path="" type="2"/>
+    <File name="Drivers/AUDIO_IF/Si5351/Si5351.h" path="Drivers/AUDIO_IF/Si5351/Si5351.h" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_conf.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_conf.h" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_rtc.h" path="cmsis_lib/include/stm32f4xx_rtc.h" type="1"/>
-    <File name="cmsis_lib/include/misc.h" path="cmsis_lib/include/misc.h" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/pages.h" path="Drivers/UI_NGL/Pages/pages.h" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/MainPage/MainPage.c" path="Drivers/UI_NGL/Pages/MainPage/MainPage.c" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_rcc.c" path="stm_lib/source/stm32f4xx_rcc.c" type="1"/>
+    <File name="Drivers/USER_IF/pages/MainPage/mainpage.c" path="Drivers/USER_IF/pages/MainPage/mainpage.c" type="1"/>
+    <File name="Drivers/USER_IF/pages/pages.h" path="Drivers/USER_IF/pages/pages.h" type="1"/>
+    <File name="Drivers/HAL/SPI/SPI.c" path="Drivers/HAL/SPI/SPI.c" type="1"/>
+    <File name="stm_lib/source" path="" type="2"/>
     <File name="Drivers/STM32_USB_OTG_Driver/src/usb_bsp.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_bsp.c" type="1"/>
     <File name="cmsis/math_helper.h" path="cmsis/math_helper.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/rewind.c" path="Drivers/UI_NGL/Bitmaps/rewind.c" type="1"/>
+    <File name="Drivers/T11_Platform" path="" type="2"/>
+    <File name="Drivers/USER_IF/TouchScreen/touchscreen.c" path="Drivers/USER_IF/TouchScreen/touchscreen.c" type="1"/>
+    <File name="Drivers/USER_IF/bitmaps/Clock.c" path="Drivers/USER_IF/bitmaps/Clock.c" type="1"/>
+    <File name="Drivers/USER_IF/t11_user_if.h" path="Drivers/USER_IF/t11_user_if.h" type="1"/>
     <File name="main.c" path="main.c" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver/src/usb_dcd_int.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_dcd_int.c" type="1"/>
-    <File name="Drivers/TouchScreen/touchscreen.c" path="Drivers/TouchScreen/touchscreen.c" type="1"/>
-    <File name="Drivers/SysTick" path="" type="2"/>
-    <File name="Drivers/LCD_NGL/libNGL.a" path="Drivers/LCD_NGL/libNGL.a" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_gpio.c" path="cmsis_lib/source/stm32f4xx_gpio.c" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_i2c.h" path="cmsis_lib/include/stm32f4xx_i2c.h" type="1"/>
+    <File name="Drivers/HAL/I2S" path="" type="2"/>
+    <File name="stm_lib/source/stm32f4xx_i2c.c" path="stm_lib/source/stm32f4xx_i2c.c" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/inc" path="" type="2"/>
-    <File name="Drivers/UI_NGL/Bitmaps/pause.c" path="Drivers/UI_NGL/Bitmaps/pause.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_dma.c" path="cmsis_lib/source/stm32f4xx_dma.c" type="1"/>
-    <File name="DAC_Layer/AD1852" path="" type="2"/>
+    <File name="Drivers/USER_IF/t11_user_if_types.h" path="Drivers/USER_IF/t11_user_if_types.h" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_rcc.h" path="stm_lib/include/stm32f4xx_rcc.h" type="1"/>
     <File name="cmsis_boot" path="" type="2"/>
-    <File name="cmsis_lib/include/stm32f4xx_syscfg.h" path="cmsis_lib/include/stm32f4xx_syscfg.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_fsmc.c" path="cmsis_lib/source/stm32f4xx_fsmc.c" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_crc.c" path="stm_lib/source/stm32f4xx_crc.c" type="1"/>
+    <File name="Drivers/USER_IF/fonts/ms_shell_dlg_2_8_bold.c" path="Drivers/USER_IF/fonts/ms_shell_dlg_2_8_bold.c" type="1"/>
     <File name="Drivers" path="" type="2"/>
-    <File name="Drivers/I2S/I2S.c" path="Drivers/I2S/I2S.c" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_regs.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_regs.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_flash.c" path="cmsis_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="Drivers/AUDIO_IF/PGA2311/pga2311.c" path="Drivers/AUDIO_IF/PGA2311/pga2311.c" type="1"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
-    <File name="Drivers/UI_NGL/Fonts/Square721_BT_10.c" path="Drivers/UI_NGL/Fonts/Square721_BT_10.c" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_dbgmcu.h" path="cmsis_lib/include/stm32f4xx_dbgmcu.h" type="1"/>
     <File name="cmsis/core_cm4.h" path="cmsis/core_cm4.h" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver" path="" type="2"/>
-    <File name="Drivers/LCD_NGL/LCD.c" path="Drivers/LCD_NGL/LCD.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_dbgmcu.c" path="cmsis_lib/source/stm32f4xx_dbgmcu.c" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/forward.c" path="Drivers/UI_NGL/Bitmaps/forward.c" type="1"/>
-    <File name="DAC_Layer/AD1852/AD1852.c" path="DAC_Layer/AD1852/AD1852.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_crc.c" path="cmsis_lib/source/stm32f4xx_crc.c" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/OFFTimerPage/OFFTimerPage_Buttons.h" path="Drivers/UI_NGL/Pages/OFFTimerPage/OFFTimerPage_Buttons.h" type="1"/>
-    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd.h" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_spi.h" path="stm_lib/include/stm32f4xx_spi.h" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_dma.c" path="stm_lib/source/stm32f4xx_dma.c" type="1"/>
+    <File name="Drivers/AUDIO_IF/t11_audio_if.c" path="Drivers/AUDIO_IF/t11_audio_if.c" type="1"/>
+    <File name="stm_lib/include/misc.h" path="stm_lib/include/misc.h" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_usr.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_usr.c" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_dcd.h" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_syscfg.h" path="stm_lib/include/stm32f4xx_syscfg.h" type="1"/>
     <File name="cmsis/arm_math.h" path="cmsis/arm_math.h" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/SettingsPage" path="" type="2"/>
-    <File name="Drivers/UI_NGL/Pages" path="" type="2"/>
-    <File name="cmsis_lib/source/misc.c" path="cmsis_lib/source/misc.c" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_adc.c" path="cmsis_lib/source/stm32f4xx_adc.c" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_tim.h" path="cmsis_lib/include/stm32f4xx_tim.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/List.c" path="Drivers/UI_NGL/Bitmaps/List.c" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/src" path="" type="2"/>
-    <File name="cmsis_lib/source/stm32f4xx_i2c.c" path="cmsis_lib/source/stm32f4xx_i2c.c" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/OFFTimerPage" path="" type="2"/>
-    <File name="cmsis_lib/source" path="" type="2"/>
-    <File name="Drivers/I2S/I2S.h" path="Drivers/I2S/I2S.h" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_adc.c" path="stm_lib/source/stm32f4xx_adc.c" type="1"/>
+    <File name="Drivers/HAL/LEDS" path="" type="2"/>
+    <File name="Drivers/USER_IF/fonts/fonts.h" path="Drivers/USER_IF/fonts/fonts.h" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_desc.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_desc.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/Clock.c" path="Drivers/UI_NGL/Bitmaps/Clock.c" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps" path="" type="2"/>
-    <File name="Global_Init.h" path="Global_Init.h" type="1"/>
-    <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_ioreq.h" type="1"/>
-    <File name="Drivers/UI_NGL/PeekLevel.h" path="Drivers/UI_NGL/Pages/MainPage/PeekLevel.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/play.c" path="Drivers/UI_NGL/Bitmaps/play.c" type="1"/>
-    <File name="Drivers/SPI" path="" type="2"/>
+    <File name="Drivers/HAL/SysTick/systick.c" path="Drivers/HAL/SysTick/systick.c" type="1"/>
+    <File name="stm_lib/include" path="" type="2"/>
+    <File name="stm_lib/source/stm32f4xx_gpio.c" path="stm_lib/source/stm32f4xx_gpio.c" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_syscfg.c" path="stm_lib/source/stm32f4xx_syscfg.c" type="1"/>
+    <File name="Drivers/T11_Platform/platform_types.h" path="Drivers/T11_Platform/platform_types.h" type="1"/>
     <File name="cmsis_boot/stm32f4xx_conf.h" path="cmsis_boot/stm32f4xx_conf.h" type="1"/>
-    <File name="Drivers/UI_NGL/Fonts/BankGothic_Lt_BT_11.c" path="Drivers/UI_NGL/Fonts/BankGothic_Lt_BT_11.c" type="1"/>
     <File name="cmsis_boot/system_stm32f4xx.h" path="cmsis_boot/system_stm32f4xx.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/stop.c" path="Drivers/UI_NGL/Bitmaps/stop.c" type="1"/>
-    <File name="Drivers/I2S" path="" type="2"/>
-    <File name="Drivers/STM32_USB_OTG_Driver/src" path="" type="2"/>
+    <File name="stm_lib/include/stm32f4xx_exti.h" path="stm_lib/include/stm32f4xx_exti.h" type="1"/>
+    <File name="Drivers/USER_IF/pages/MainPage/mainpage_fillbars.h" path="Drivers/USER_IF/pages/MainPage/mainpage_fillbars.h" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_def.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_def.h" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/MainPage/MainPage_Labels.h" path="Drivers/UI_NGL/Pages/MainPage/MainPage_Labels.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/sound_on.c" path="Drivers/UI_NGL/Bitmaps/sound_on.c" type="1"/>
+    <File name="Drivers/STM32_USB_OTG_Driver/src" path="" type="2"/>
+    <File name="Drivers/USER_IF/fonts/ms_shell_dlg_2_8_normal.c" path="Drivers/USER_IF/fonts/ms_shell_dlg_2_8_normal.c" type="1"/>
+    <File name="stm_lib/source/misc.c" path="stm_lib/source/misc.c" type="1"/>
+    <File name="Drivers/HAL/SPI" path="" type="2"/>
+    <File name="Drivers/USER_IF/NGL/libngl.a" path="Drivers/USER_IF/NGL/libngl.a" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_flash.c" path="stm_lib/source/stm32f4xx_flash.c" type="1"/>
+    <File name="Drivers/AUDIO_IF/Si5351/Si5351.c" path="Drivers/AUDIO_IF/Si5351/Si5351.c" type="1"/>
+    <File name="Drivers/USER_IF/NGL/colors-5-6-5.h" path="Drivers/USER_IF/NGL/colors-5-6-5.h" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_adc.h" path="stm_lib/include/stm32f4xx_adc.h" type="1"/>
     <File name="Drivers/STM32_USB_OTG_Driver/src/usb_dcd.c" path="Drivers/STM32_USB_OTG_Driver/src/usb_dcd.c" type="1"/>
-    <File name="Drivers/UI_NGL/Fonts/Square721_BT_9.c" path="Drivers/UI_NGL/Fonts/Square721_BT_9.c" type="1"/>
-    <File name="Drivers/UI_NGL/PeekLevel.c" path="Drivers/UI_NGL/Pages/MainPage/PeekLevel.c" type="1"/>
-    <File name="Drivers/SPI/SPI.c" path="Drivers/SPI/SPI.c" type="1"/>
-    <File name="Global_Init.c" path="Global_Init.c" type="1"/>
-    <File name="Drivers/LCD_NGL/LCD.h" path="Drivers/LCD_NGL/LCD.h" type="1"/>
+    <File name="Drivers/HAL/BKP_SRAM4K/BKP_SRAM4K.h" path="Drivers/HAL/BKP_SRAM4K/BKP_SRAM4K.h" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_rtc.h" path="stm_lib/include/stm32f4xx_rtc.h" type="1"/>
+    <File name="Drivers/T11_Platform/platform.h" path="Drivers/T11_Platform/platform.h" type="1"/>
+    <File name="Drivers/USER_IF/fonts/ms_shell_dlg_2_10_bold.c" path="Drivers/USER_IF/fonts/ms_shell_dlg_2_10_bold.c" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core" path="" type="2"/>
-    <File name="Drivers/I2C/I2C.c" path="Drivers/I2C/I2C.c" type="1"/>
-    <File name="Drivers/UI_NGL" path="" type="2"/>
-    <File name="Drivers/UI_NGL/Bitmaps/Control Panel.c" path="Drivers/UI_NGL/Bitmaps/Control Panel.c" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/rewind_on.c" path="Drivers/UI_NGL/Bitmaps/rewind_on.c" type="1"/>
+    <File name="Drivers/AUDIO_IF" path="" type="2"/>
+    <File name="Drivers/HAL/LEDS/LEDS.c" path="Drivers/HAL/LEDS/LEDS.c" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_fsmc.h" path="stm_lib/include/stm32f4xx_fsmc.h" type="1"/>
+    <File name="Drivers/HAL/t11_hal.h" path="Drivers/HAL/t11_hal.h" type="1"/>
+    <File name="Drivers/HAL/I2C/I2C.c" path="Drivers/HAL/I2C/I2C.c" type="1"/>
+    <File name="Drivers/T11_Platform/platform.c" path="Drivers/T11_Platform/platform.c" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Class/usbd_audio_core.c" path="Drivers/STM32_USB_Device_Library/Class/audio/src/usbd_audio_core.c" type="1"/>
-    <File name="Drivers/SysTick/systick.h" path="Drivers/SysTick/systick.h" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_fsmc.c" path="stm_lib/source/stm32f4xx_fsmc.c" type="1"/>
+    <File name="Drivers/USER_IF/NGL/colors-5-6-5.c" path="Drivers/USER_IF/NGL/colors-5-6-5.c" type="1"/>
+    <File name="Drivers/USER_IF/pages/MainPage/mainpage_seekbars.h" path="Drivers/USER_IF/pages/MainPage/mainpage_seekbars.h" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_rtc.c" path="stm_lib/source/stm32f4xx_rtc.c" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_pwr.h" path="stm_lib/include/stm32f4xx_pwr.h" type="1"/>
+    <File name="stm_lib/source/stm32f4xx_tim.c" path="stm_lib/source/stm32f4xx_tim.c" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library" path="" type="2"/>
-    <File name="cmsis_lib/include/stm32f4xx_exti.h" path="cmsis_lib/include/stm32f4xx_exti.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_exti.c" path="cmsis_lib/source/stm32f4xx_exti.c" type="1"/>
-    <File name="Drivers/FFT/FFT.c" path="Drivers/FFT/FFT.c" type="1"/>
+    <File name="Drivers/USER_IF/bitmaps/bitmaps.h" path="Drivers/USER_IF/bitmaps/bitmaps.h" type="1"/>
+    <File name="Drivers/AUDIO_IF/PGA2311" path="" type="2"/>
+    <File name="Drivers/USER_IF/NGL" path="" type="2"/>
+    <File name="Drivers/HAL/I2S/I2S.h" path="Drivers/HAL/I2S/I2S.h" type="1"/>
+    <File name="Drivers/HAL/LEDS/LEDS.h" path="Drivers/HAL/LEDS/LEDS.h" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_desc.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_desc.c" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/OFFTimerPage/OFFTimerPage.c" path="Drivers/UI_NGL/Pages/OFFTimerPage/OFFTimerPage.c" type="1"/>
-    <File name="Drivers/UI_NGL/Spectrum.c" path="Drivers/UI_NGL/Spectrum.c" type="1"/>
-    <File name="Drivers/UI_NGL/Pages/MainPage" path="" type="2"/>
-    <File name="cmsis_lib/include/stm32f4xx_dma.h" path="cmsis_lib/include/stm32f4xx_dma.h" type="1"/>
-    <File name="cmsis_lib/source/stm32f4xx_tim.c" path="cmsis_lib/source/stm32f4xx_tim.c" type="1"/>
-    <File name="Drivers/SysTick/systick.c" path="Drivers/SysTick/systick.c" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_gpio.h" path="cmsis_lib/include/stm32f4xx_gpio.h" type="1"/>
-    <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_req.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_req.c" type="1"/>
+    <File name="Drivers/FFT/FFT.c" path="Drivers/FFT/FFT.c" type="1"/>
+    <File name="stm_lib/include/stm32f4xx_gpio.h" path="stm_lib/include/stm32f4xx_gpio.h" type="1"/>
     <File name="Drivers/STM32_USB_Device_Library/Core/inc/usbd_req.h" path="Drivers/STM32_USB_Device_Library/Core/inc/usbd_req.h" type="1"/>
+    <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_req.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_req.c" type="1"/>
     <File name="syscalls" path="" type="2"/>
     <File name="Drivers/STM32_USB_OTG_Driver/inc/usb_bsp.h" path="Drivers/STM32_USB_OTG_Driver/inc/usb_bsp.h" type="1"/>
-    <File name="Drivers/STM32_USB_Device_Library/Core/src/usbd_ioreq.c" path="Drivers/STM32_USB_Device_Library/Core/src/usbd_ioreq.c" type="1"/>
-    <File name="Drivers/Si5355" path="" type="2"/>
-    <File name="Drivers/I2C/I2C.h" path="Drivers/I2C/I2C.h" type="1"/>
-    <File name="cmsis_lib/include/stm32f4xx_fsmc.h" path="cmsis_lib/include/stm32f4xx_fsmc.h" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/settings_.c" path="Drivers/UI_NGL/Bitmaps/settings_.c" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/sound.c" path="Drivers/UI_NGL/Bitmaps/sound.c" type="1"/>
-    <File name="cmsis_lib/include" path="" type="2"/>
-    <File name="Drivers/UI_NGL/Bitmaps/BackImg.jpg.c" path="Drivers/UI_NGL/Bitmaps/BackImg.jpg.c" type="1"/>
-    <File name="Drivers/UI_NGL/Bitmaps/Images.h" path="Drivers/UI_NGL/Bitmaps/Images.h" type="1"/>
-    <File name="platform.c" path="platform.c" type="1"/>
+    <File name="Drivers/AUDIO_IF/t11_audio_if.h" path="Drivers/AUDIO_IF/t11_audio_if.h" type="1"/>
+    <File name="Drivers/USER_IF/TouchScreen" path="" type="2"/>
+    <File name="Drivers/HAL/SysTick/stm32f10x_systick.c" path="Drivers/HAL/SysTick/stm32f10x_systick.c" type="1"/>
+    <File name="Drivers/USER_IF/fonts" path="" type="2"/>
+    <File name="Drivers/USER_IF/pages/MainPage/mainpage_labels.h" path="Drivers/USER_IF/pages/MainPage/mainpage_labels.h" type="1"/>
+    <File name="Drivers/USER_IF/NGL/NGL.h" path="Drivers/USER_IF/NGL/NGL.h" type="1"/>
   </Files>
 </Project>
